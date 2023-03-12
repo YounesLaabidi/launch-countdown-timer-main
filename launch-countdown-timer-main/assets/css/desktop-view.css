@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+  .countdown__header-text {
+    letter-spacing: 8px;
+    margin-bottom: 80px;
+  }
+  .countdown__body {
+    width: 690px;
+  }
+  .timer__unit {
+    width: 150px;
+    height: 150px;
+  }
+  .unit {
+    font-size: 3.2rem;
+  }
+  .unit-name {
+    font-size: 1rem;
+    bottom: -45px;
+  }
+}
+.sm-icon img {
+  transition: filter 300ms ease-in-out;
+}
+.sm-icon img:hover {
+  filter: hue-rotate(96deg) brightness(1.5) saturate(8);
+}
