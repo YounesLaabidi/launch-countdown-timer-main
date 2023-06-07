@@ -10,7 +10,12 @@ const showRemainingTime = (currentTime) => {
   timeUnit.minutes.innerText = currentTime.minutes;
   timeUnit.seconds.innerText = currentTime.seconds;
 };
-const launchTimeMilliseconds = new Date("2023-04-02T10:45:21").getTime();
+let day = String(new Date().getMonth() + 2);
+if (day.length === 1) {
+  day = "0" + day;
+}
+console.log(day);
+const launchTimeMilliseconds = new Date(`2023-${day}-02T10:45:21`).getTime();
 function countdown() {
   const currentDateMilliseconds = new Date().getTime();
   const remainingTimeMilliseconds =
